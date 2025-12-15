@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block title%}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{title}}</h1>
+    <hr>
+    <h2>Welcome to our website!</h2>
+    {% if username =='aekkachat' %}
+        <h3>Hello, Admin {{ username }}!</h3>
+    {% endif %}
+{% endblock %}
+
